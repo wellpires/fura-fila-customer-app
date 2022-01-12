@@ -20,12 +20,12 @@ public class CustomerServiceImpl implements CustomerService {
 
 		Customer customer = new CustomerBuilder().name(newCustomerDTO.getName()).birthday(newCustomerDTO.getBirthday())
 				.cpf(newCustomerDTO.getCpf()).gender(newCustomerDTO.getGender())
-				.residencialTelephone(newCustomerDTO.getResidencialTelephone())
-				.externalTelephone(newCustomerDTO.getExternalTelephone()).mobileNumber(newCustomerDTO.getMobileNumber())
+				.homePhone(newCustomerDTO.getHomePhone())
+				.commercialPhone(newCustomerDTO.getCommercialPhone()).mobilePhone(newCustomerDTO.getMobilePhone())
 				.email(newCustomerDTO.getEmail()).addressMoreInfo(newCustomerDTO.getAddressMoreInfo())
 				.houseNumber(newCustomerDTO.getHouseNumber()).doorNumber(newCustomerDTO.getDoorNumber())
 				.postalCode(newCustomerDTO.getPostalCode()).idLogin(newCustomerDTO.getIdLogin())
-				.idImagem(newCustomerDTO.getIdImagem()).build();
+				.idImage(newCustomerDTO.getIdImage()).build();
 		customerRepository.save(customer);
 
 	}

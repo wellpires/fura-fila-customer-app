@@ -14,16 +14,16 @@ public class CustomerBuilder {
 	private Date birthday;
 	private Long cpf;
 	private Gender gender;
-	private Long residencialTelephone;
-	private Long externalTelephone;
-	private Long mobileNumber;
+	private Long homePhone;
+	private Long commercialPhone;
+	private Long mobilePhone;
 	private String email;
 	private String addressMoreInfo;
 	private Integer houseNumber;
 	private Integer doorNumber;
 	private Integer postalCode;
 	private Long idLogin;
-	private Long idImagem;
+	private Long idImage;
 
 	public CustomerBuilder name(String name) {
 		this.name = name;
@@ -50,18 +50,18 @@ public class CustomerBuilder {
 		return this;
 	}
 
-	public CustomerBuilder residencialTelephone(Long residencialTelephone) {
-		this.residencialTelephone = residencialTelephone;
+	public CustomerBuilder homePhone(Long homePhone) {
+		this.homePhone = homePhone;
 		return this;
 	}
 
-	public CustomerBuilder externalTelephone(Long externalTelephone) {
-		this.externalTelephone = externalTelephone;
+	public CustomerBuilder commercialPhone(Long commercialPhone) {
+		this.commercialPhone = commercialPhone;
 		return this;
 	}
 
-	public CustomerBuilder mobileNumber(Long mobileNumber) {
-		this.mobileNumber = mobileNumber;
+	public CustomerBuilder mobilePhone(Long mobilePhone) {
+		this.mobilePhone = mobilePhone;
 		return this;
 	}
 
@@ -95,8 +95,8 @@ public class CustomerBuilder {
 		return this;
 	}
 
-	public CustomerBuilder idImagem(Long idImagem) {
-		this.idImagem = idImagem;
+	public CustomerBuilder idImage(Long idImage) {
+		this.idImage = idImage;
 		return this;
 	}
 
@@ -107,16 +107,16 @@ public class CustomerBuilder {
 		customer.setBirthday(birthday);
 		customer.setCpf(cpf);
 		customer.setGender(gender);
-		customer.setResidencialPhone(residencialTelephone);
-		customer.setExternalPhone(externalTelephone);
-		customer.setMobilePhone(mobileNumber);
+		customer.setHomePhone(homePhone);
+		customer.setCommercialPhone(commercialPhone);
+		customer.setMobilePhone(mobilePhone);
 		customer.setEmail(email);
 		customer.setAddressMoreInfo(addressMoreInfo);
 		customer.setHouseNumber(houseNumber);
 		customer.setDoorNumber(doorNumber);
 		customer.setPostalCode(postalCode);
 		customer.setIdLogin(idLogin);
-		customer.setIdImage(idImagem);
+		customer.setIdImage(idImage);
 		return customer;
 	}
 

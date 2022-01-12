@@ -41,10 +41,10 @@ public class Customer implements Serializable {
 	private Gender gender;
 
 	@Column(name = "tel_res")
-	private Long residencialPhone;
+	private Long homePhone;
 
 	@Column(name = "tel_com")
-	private Long externalPhone;
+	private Long commercialPhone;
 
 	@Column(name = "celular")
 	private Long mobilePhone;
@@ -109,20 +109,20 @@ public class Customer implements Serializable {
 		this.gender = gender;
 	}
 
-	public Long getResidencialPhone() {
-		return residencialPhone;
+	public Long getHomePhone() {
+		return homePhone;
 	}
 
-	public void setResidencialPhone(Long residencialPhone) {
-		this.residencialPhone = residencialPhone;
+	public void setHomePhone(Long homePhone) {
+		this.homePhone = homePhone;
 	}
 
-	public Long getExternalPhone() {
-		return externalPhone;
+	public Long getCommercialPhone() {
+		return commercialPhone;
 	}
 
-	public void setExternalPhone(Long externalPhone) {
-		this.externalPhone = externalPhone;
+	public void setCommercialPhone(Long commercialPhone) {
+		this.commercialPhone = commercialPhone;
 	}
 
 	public Long getMobilePhone() {

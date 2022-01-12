@@ -14,16 +14,16 @@ public class NewCustomerDTO {
 	private LocalDate birthday;
 	private Long cpf;
 	private String gender;
-	private Long residencialTelephone;
-	private Long externalTelephone;
-	private Long mobileNumber;
+	private Long homePhone;
+	private Long commercialPhone;
+	private Long mobilePhone;
 	private String email;
 	private String addressMoreInfo;
 	private Integer houseNumber;
 	private Integer doorNumber;
 	private Integer postalCode;
 	private Long idLogin;
-	private Long idImagem;
+	private Long idImage;
 
 	public String getName() {
 		return name;
@@ -57,28 +57,28 @@ public class NewCustomerDTO {
 		this.gender = gender;
 	}
 
-	public Long getResidencialTelephone() {
-		return residencialTelephone;
+	public Long getHomePhone() {
+		return homePhone;
 	}
 
-	public void setResidencialTelephone(Long residencialTelephone) {
-		this.residencialTelephone = residencialTelephone;
+	public void setHomePhone(Long residencialTelephone) {
+		this.homePhone = residencialTelephone;
 	}
 
-	public Long getExternalTelephone() {
-		return externalTelephone;
+	public Long getCommercialPhone() {
+		return commercialPhone;
 	}
 
-	public void setExternalTelephone(Long externalTelephone) {
-		this.externalTelephone = externalTelephone;
+	public void setCommercialPhone(Long externalTelephone) {
+		this.commercialPhone = externalTelephone;
 	}
 
-	public Long getMobileNumber() {
-		return mobileNumber;
+	public Long getMobilePhone() {
+		return mobilePhone;
 	}
 
-	public void setMobileNumber(Long mobileNumber) {
-		this.mobileNumber = mobileNumber;
+	public void setMobilePhone(Long mobileNumber) {
+		this.mobilePhone = mobileNumber;
 	}
 
 	public String getEmail() {
@@ -129,12 +129,12 @@ public class NewCustomerDTO {
 		this.idLogin = idLogin;
 	}
 
-	public Long getIdImagem() {
-		return idImagem;
+	public Long getIdImage() {
+		return idImage;
 	}
 
-	public void setIdImagem(Long idImagem) {
-		this.idImagem = idImagem;
+	public void setIdImage(Long idImage) {
+		this.idImage = idImage;
 	}
 
 }
