@@ -34,7 +34,7 @@ public class Customer implements Serializable {
 	@Temporal(TemporalType.DATE)
 	private Date birthday;
 
-	private Long cpf;
+	private String cpf;
 
 	@Column(name = "sexo")
 	@Enumerated(EnumType.STRING)
@@ -93,11 +93,11 @@ public class Customer implements Serializable {
 		this.birthday = birthday;
 	}
 
-	public Long getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
 
-	public void setCpf(Long cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
 

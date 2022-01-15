@@ -1,5 +1,7 @@
 package br.com.furafilapp.customerapp.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +23,7 @@ public class CustomerController implements CustomerResource {
 
 	@Override
 	@PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<Void> save(@RequestBody NewCustomerRequest newCustomerRequest) {
+	public ResponseEntity<Void> save(@RequestBody @Valid NewCustomerRequest newCustomerRequest) {
 
 		customerService.saveCustomer(newCustomerRequest.getNewCustomerDTO());
 

@@ -12,7 +12,7 @@ public class CustomerBuilder {
 
 	private String name;
 	private Date birthday;
-	private Long cpf;
+	private String cpf;
 	private Gender gender;
 	private Long homePhone;
 	private Long commercialPhone;
@@ -40,7 +40,7 @@ public class CustomerBuilder {
 		return this;
 	}
 
-	public CustomerBuilder cpf(Long cpf) {
+	public CustomerBuilder cpf(String cpf) {
 		this.cpf = cpf;
 		return this;
 	}
