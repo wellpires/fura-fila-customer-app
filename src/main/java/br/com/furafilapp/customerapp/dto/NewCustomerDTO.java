@@ -47,7 +47,7 @@ public class NewCustomerDTO {
 	private String gender;
 
 	@NotNull(message = Messages.HOMEPHONE_IS_REQUIRED, groups = FirstOrder.class)
-	@Min(value = 10000000000l, message = Messages.HOMEPHONE_IS_NOT_VALID, groups = SecondOrder.class)
+	@Min(value = 1000000000l, message = Messages.HOMEPHONE_IS_NOT_VALID, groups = SecondOrder.class)
 	@Max(value = 99999999999l, message = Messages.HOMEPHONE_IS_NOT_VALID, groups = ThirdOrder.class)
 	private Long homePhone;
 	private Long commercialPhone;
