@@ -9,7 +9,7 @@
 		<version>2.6.2</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.furafilapp</groupId>
+	<groupId>br.com.furafila</groupId>
 	<artifactId>fura-fila-customer-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>fura-fila-customer-app</name>
